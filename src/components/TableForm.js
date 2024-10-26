@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import {AiOutlineDelete, AiOutlineEdit} from "react-icons/ai"
 import { v4 as uuidv4 } from 'uuid';
-import TitleNames from './TitleName';
+// import TitleNames from './TitleName';
 
 import './Table.css'
 

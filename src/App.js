@@ -4,16 +4,16 @@ import { useState, useRef } from "react";
 import logo from "./assets/festivida.png";
 
 import ClientDetails from './components/ClientDetails';
-import Dates from './components/Dates';
+// import Dates from './components/Dates';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import MainDetails from './components/MainDetails';
+// import MainDetails from './components/MainDetails';
 import Notes from './components/Notes';
 import Table from './components/Table';
 import TableForm from './components/TableForm';
 import ReactToPrint from 'react-to-print';
 import Bill from './components/Bill';
-import useMediaQuery from '@mui/material/useMediaQuery';
+// import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 function App() {
@@ -34,14 +34,14 @@ function App() {
   const [clientname, setClientName] = useState("")
   const [clientaddress, setClientAddress] = useState("pulpar mohammadpur")
   const [clientPhone, setClientPhone] = useState("80000")
-  const [venue, setVenue] = useState("Anam")
+  // const [venue, setVenue] = useState("Anam")
   const [venuedate, setVenueDate] = useState("")
   const [invoiceDate, setInvoiceDate] = useState("")
   // const [selectedOption, setSelectedOption] = useState('');
   const [notes, setNotes] = useState("")
 
   // table content
-  const [title, setTitle] = useState("")
+  // const [title, setTitle] = useState("")
   const [description, setDescription] = useState("")
   const [file, setFile] = useState();
   const [rate, setRate] = useState("");
@@ -52,7 +52,7 @@ function App() {
   const [total, setTotal] = useState(0)
   const [selectedTitle, setSelectedTitle] = useState('');
   const [discount, setDiscount] = useState(0)
-  const isMediumScreen = useMediaQuery('(min-width:601px)');
+  // const isMediumScreen = useMediaQuery('(min-width:601px)');
 
   const componentRef = useRef()
 
@@ -76,7 +76,7 @@ function App() {
             {/* <MainDetails name= {name} address = {address} file= {file}/> */}
 
 
-            <ClientDetails clientname={clientname} clientaddress={clientaddress} clientPhone={clientPhone} venue={venue} invoiceDate={invoiceDate} venuedate={venuedate} />
+            <ClientDetails clientname={clientname} clientaddress={clientaddress} clientPhone={clientPhone} invoiceDate={invoiceDate} venuedate={venuedate} />
 
 
             {/* <Dates venue = {venue} venuetype = {venuetype} venuedate = {venuedate}/> */}
